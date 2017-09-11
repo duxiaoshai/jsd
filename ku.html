@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<script src="indexku.js"></script>
+</head>
+<body>
+<script>
+// console.log(str)
+// 
+// 
+// console.log(join(arr, '+'))
+// var result = some(arr, function(value) {
+// 		return value>0
+	
+// }
+
+// )
+// console.log(result)
+// 
+// 
+// var result=every(arr, function(value) {
+	// 	return value>0
+	//
+// }
+
+// )
+// console.log(result)
+
+
+// 递归函数    不是循环
+// 一定要给一个条件    一个出口
+// 自己调用本身
+// 
+
+// fn(1)
+// function fn(num) {
+	// 	if(num<5) {
+		// 		fn(++num)
+		//
+	// }
+
+	// 	alert(num)
+	//
+// }
+
+// 递归函数完
+// 
+// 复制
+// var arr = [1, 2, 3, 4, 5, 6, ['x', 'y', '5']]
+
+// console.log(copy(arr))
+
+// function copy(arr) {
+	// var arr1=[];
+	// for(var i=0;
+	// i<arr.length;
+
+	// i++) {
+		// 	arr1[i]=arr[i]
+
+		// 	if(typeof arr[i] == 'object') {
+			// 		arr1[i]=copy(arr[i])
+		// 
+		// }
+
+		// else {
+			// 		arr1[i]=arr[i]
+			//
+		// }
+
+		//
+	// }
+
+	//    return arr1
+
+	//
+// }
+
+// 复制完
+// 
+
+// 箭头函数     为了方便回调函数的使用 
+
+// var fn = function(a) {
+	// 	return a;
+	//
+// }
+
+// 等价于
+// 
+// var fn = a => a;
+// alert(fn(10));
+// var fn = () => 1;
+// 中间没有参数的时候加一个小括号    相当于return一个1
+
+// var fn = (a，b) => a+b;
+// 参数多也加一个小括号     相当于return一个a+b;
+
+// var fn=(a, b)=> {
+	//    alert(a-b);
+	//    alert(a+b);
+	//    return [a, b]
+	//
+// }
+
+// alert(fn(3, 5))
+
+// 他的函数语句 大于一句  加大括号
+// 注意事项   箭头函数里没有arguments
+
+
+
+// let声明：
+// var（存在一个变量的提升）  与  let 的相同与不同点
+// 用法一样
+// let 声明之前  是不能调用 访问的！
+// 在同一个作用域里是不允许用let声明同一个变量
+// let 会保存下来你每一次
+// let声明之前的区域称为暂时性的死区
+// alert(num)
+// let num;
+// alert(num)
+// num=10;
+
+// alert(num)
+
+/*块级作用域     只有let识别块级作用域   var是不识别块级作用域的*/
+// {
+	// 	let num = 10;
+	// 	console.log(num);
+	//
+// }
+
+// 这个num只在这个大括号里适用
+
+/*const声明变量     声明的常量*/
+
+// 例如： 圆周率
+// 用const来声明，
+// 用const声明时：声明完了之后他的值不允许修改
+// 声明的同时就得赋值  不允许先声明后赋值
+// 常量一般都要写在script标签的最前面
+
+// const π=3.1415926;
+// console.log(π)
+
+/*内置 (内部   js自带的) 顶层 （直接拿过来就可以用  全局）函数*/
+// escape( ) unescape( ) Number( ) String( )  Boolean( ) parseInt( ) 
+// parseFloat( ) isNaN( )
+
+// escape( )    //对汉字进行编码
+//unescape( )  //解码
+//Number( ) ： //转换为数字 转数字时  必须得符合数字的规则     只有数字型的字符串才可以转为数字   剩下的都是NAN  
+// console.log(Number('abcd'))
+//Boolean( )   //转换布尔值时 false 0 null undefined  ''  NaN  六个是假的  剩下的全真
+//// console.log(parseInt('abcc100px200') )   //NaN
+// console.log(parseInt('100px200') )       //100
+// console.log(parseInt('   -100px200') )   //-100
+// console.log(parseInt('0b1111') ) 		//0
+//parseFloat( )//把字符串转换为数字（小数）  
+// console.log(parseFloat('100.5px' ))          //100.5
+//isNaN( )     // is not a number （）
+             //只要里面的值能转换为数值就返回 false
+
+// console.log(escape('张三' ))
+// console.log(unescape('%u5F20%u4E09' ))
+// console.log(Number('100.2'))
+// console.log(Boolean('') )
+// console.log(Boolean( '5') )
+// console.log(isNaN('abcd'))
+
+
+
+
+</script>
+
+</body>
+</html>

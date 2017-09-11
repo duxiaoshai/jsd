@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>对象</title>
+</head>
+<body>
+<script>
+/*json
+定义：
+构造函数：*/
+  function Person(){
+
+  }
+  let zhangsan = new Person ();
+  let lisi = new Person();
+  let wangwu = new Person();
+  
+// 添加属性： 方法
+// 谁   什么属性     等于
+  zhangsan.age = 18;
+  zhangsan.name = 'zhangsan'
+
+// 方法    函数
+  zhangsan.say = function(){
+  	alert(zhangsan.name)
+  }
+  lisi.age = 20;
+  lisi.name = 'lisi'
+  wangwu.classes = 'WUIF-1707'
+// 访问：
+// 谁   什么
+alert(zhangsan.age)
+// alert(zhangsan.name)
+alert(lisi.age)
+alert(lisi.name)
+zhangsan.say()
+
+
+</script>
+</body>
+</html>
