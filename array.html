@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		/*let arr = [1,2,3,4,5,6];
+		let arr1 =['a','b','c','d'];
+		// for(let i=0;i<arr1.length;i++){
+		// 	arr.push(arr1);
+		// }
+		arr.push(...arr1);
+		console.log(arr)*/
+		// let arr = [11,22,55,489,87,801,7,8];
+		// arr.sort(function(a,b){
+		// 	return a-b<0
+		// })
+		// let sum = 0;
+		// forEach
+		// 没有返回值  undefined
+		// 仅仅是便利用的
+		
+		// arr.forEach(function(value,index){
+		// 		if(value%2==0)
+		// })
+		// let str =[]
+		// let str=arr.filter(function(value,index,obj){
+		// 	return value%2==0;
+		// })
+		// console.log(str)
+		
+		/*
+		some every map filter forEach
+		 */
+		let arr = [1,2,3,4,5,1,2,3];
+		function fn (arr){
+			let newarr=[];
+			for(let i = 0; i<arr.length;i++){
+				if(!newarr.includes(arr[i])){
+					newarr.push(arr[i]);
+				}
+			}
+			return newarr;
+		}
+		console.log(fn(arr))*/
+		function fn (arr){
+			let newarr = [];
+			for(let i =0;i<arr.length;i++){
+				let flag =true;
+				for(let j =i+1;j<arr.length;j++){
+					if(arr[i]==arr[j]){
+						flag = false;
+						break;
+					}
+				}
+				if(flag){
+					newarr.push(arr[i])
+				}
+		    }
+		    return newarr;
+		}
+		console.log(fn(arr))
+		Array.prototype.delRepeat=function(){
+			let newarr = [];
+			for(let i =0;i<this.length;i++){
+				let flag =true;
+				for(let j =i+1;j<this.length;j++){
+					if(this[i]==this[j]){
+						flag = false;
+						break;
+					}
+				}
+				if(flag){
+					newarr.push(this[i])
+				}
+		    }
+		    return newarr;
+		}
+		
+	</script>
+</body>
+</html>
